@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Pokémon TCG - Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .competence-badge {
+            display: inline-block;
+            background: #4a6fa5;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 5px 5px 5px 0;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .competence-badge:hover {
+            background: #3a5a8c;
+            text-decoration: none;
+        }
+
+        .but-competences {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #4a6fa5;
+        }
+
+        .competence-details {
+            margin-top: 15px;
+        }
+
+        .competence-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .competence-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="index.html">C.LARCHER</a>
+        </div>
+
+        <!-- Menu principal -->
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </a>
+            <a href="about.html" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span>À propos</span>
+            </a>
+            <a href="index.html#projects" class="nav-link">
+                <i class="fas fa-briefcase"></i>
+                <span>Projets</span>
+            </a>
+            <a href="competences.html" class="nav-link active">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Compétences BUT</span>
+            </a>
+            <a href="#contact" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </nav>
+
+        <!-- Menu hamburger -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <!-- Overlay pour mobile -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+</nav>
+
+<main class="project-detail">
+    <div class="container">
+        <article class="project-article">
+            <header class="project-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Accueil</a> / <a href="index.html#projects">Projets</a> / <span>Jeu Pokémon TCG</span>
+                </div>
+                <h1>Jeu Pokémon Trading Card Game</h1>
+                <p class="project-subtitle">Développement d'un jeu de cartes Pokémon complet en Java avec interface JavaFX</p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <strong><i class="fas fa-calendar"></i> Date :</strong>
+                        <span>Mars - Mai 2024</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-tag"></i> Catégorie :</strong>
+                        <span>Développement Logiciel / Jeu Vidéo</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-users"></i> Équipe :</strong>
+                        <span>Projet individuel</span>
+                    </div>
+                </div>
+
+                <!-- Badges de compétences BUT -->
+                <div class="competence-tags">
+                    <strong><i class="fas fa-graduation-cap"></i> Compétences BUT :</strong><br>
+                    <a href="competences.html#realiser" class="competence-badge">C1 : Réaliser</a>
+                    <a href="competences.html#optimiser" class="competence-badge">C2 : Optimiser</a>
+                    <a href="competences.html#collaborer" class="competence-badge">C6 : Collaborer</a>
+                </div>
+            </header>
+
+            <div class="project-gallery">
+                <div class="gallery-main">
+                    <img src="assets/images/JeuPokemon1.png" alt="Interface du jeu Pokémon TCG" class="project-img">
+                </div>
+                <div class="gallery-thumbs">
+                    <img src="assets/images/JeuPokemon1.png" alt="Écran de jeu principal" class="thumb active">
+                    <img src="assets/images/JeuPokemon2.png" alt="Gestion du deck" class="thumb">
+                    <img src="assets/images/JeuPokemon3.png" alt="Combat Pokémon" class="thumb">
+                </div>
+            </div>
+
+            <div class="project-content">
+                <!-- Section Compétences BUT -->
+                <section class="but-competences">
+                    <h2><i class="fas fa-link"></i> Liens avec les Compétences du BUT</h2>
+                    <p>Ce projet m'a permis de développer plusieurs compétences clés du BUT Informatique, en particulier celles du <strong>parcours RACDV</strong> (Réalisation d'Applications).</p>
+
+                    <div class="competence-details">
+                        <div class="competence-item">
+                            <h3><a href="competences.html#realiser" style="color: #4a6fa5;">C1 : Réaliser un développement d'application</a></h3>
+                            <p><strong>Niveau 2 atteint :</strong> Partir des exigences et aller jusqu'à une application complète</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> <strong>Élaboration des spécifications :</strong> Analyse des règles du jeu Pokémon TCG et formalisation des besoins fonctionnels</li>
+                                <li><i class="fas fa-check"></i> <strong>Bonnes pratiques de développement :</strong> Architecture modulaire, design patterns (State, Observer, Strategy)</li>
+                                <li><i class="fas fa-check"></i> <strong>Tests et validation :</strong> Implémentation de tests unitaires JUnit couvrant 85% du code métier</li>
+                                <li><i class="fas fa-check"></i> <strong>Interface utilisateur :</strong> Développement d'une IHM ergonomique avec JavaFX respectant les principes d'UX</li>
+                            </ul>
+                        </div>
+
+                        <div class="competence-item">
+                            <h3><a href="competences.html#optimiser" style="color: #4a6fa5;">C2 : Optimiser des applications</a></h3>
+                            <p><strong>Niveau 2 atteint :</strong> Sélectionner les algorithmes adéquats pour répondre à un problème donné</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> <strong>Algorithmes de jeu :</strong> Implémentation d'algorithmes pour la gestion des tours, des combats et des effets de cartes</li>
+                                <li><i class="fas fa-check"></i> <strong>Structures de données :</strong> Utilisation optimale de collections Java pour la gestion des decks et des mains</li>
+                                <li><i class="fas fa-check"></i> <strong>Performance :</strong> Optimisation des calculs de dégâts et des vérifications d'état pour une expérience fluide</li>
+                                <li><i class="fas fa-check"></i> <strong>Sécurisation :</strong> Validation des entrées et gestion robuste des exceptions</li>
+                            </ul>
+                        </div>
+
+                        <div class="competence-item">
+                            <h3><a href="competences.html#collaborer" style="color: #4a6fa5;">C6 : Collaborer au sein d'une équipe informatique</a></h3>
+                            <p><strong>Niveau 2 atteint :</strong> Situer son rôle et ses missions au sein d'une équipe</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> <strong>Gestion de version :</strong> Utilisation avancée de Git avec branches, merges et résolution de conflits</li>
+                                <li><i class="fas fa-check"></i> <strong>Documentation :</strong> Rédaction de documentation technique et utilisateur complète</li>
+                                <li><i class="fas fa-check"></i> <strong>Code review :</strong> Participation à des revues de code avec les pairs pour améliorer la qualité</li>
+                                <li><i class="fas fa-check"></i> <strong>Communication :</strong> Présentation régulière de l'avancement et des difficultés rencontrées</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="project-overview">
+                    <h2><i class="fas fa-eye"></i> Aperçu du Projet</h2>
+                    <p>Développement complet d'une implémentation du jeu de cartes Pokémon Trading Card Game en Java 21, avec une interface graphique en JavaFX. Le projet s'est déroulé en deux phases distinctes avec des objectifs pédagogiques différents.</p>
+
+                    <div class="project-phase">
+                        <h3><i class="fas fa-gamepad"></i> Phase 1 : Moteur de jeu</h3>
+                        <p>Implémentation de la logique métier du jeu en Java pur :</p>
+                        <ul>
+                            <li><strong>Architecture modulaire :</strong> Séparation claire entre les cartes Pokémon, Énergie et Dresseur</li>
+                            <li><strong>Système de combat :</strong> Gestion des PV, calcul des dégâts, faiblesses et résistances</li>
+                            <li><strong>Effets spéciaux :</strong> Implémentation des capacités spéciales des Pokémon et des effets de cartes Dresseur</li>
+                            <li><strong>Tests unitaires :</strong> Couverture de test de 85% avec JUnit pour garantir la fiabilité</li>
+                            <li><strong>Qualité de code :</strong> Respect des standards Java, documentation Javadoc complète</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-phase">
+                        <h3><i class="fas fa-desktop"></i> Phase 2 : Interface graphique</h3>
+                        <p>Création d'une interface utilisateur ergonomique avec JavaFX :</p>
+                        <ul>
+                            <li><strong>Design responsive :</strong> Adaptation à différentes tailles d'écran</li>
+                            <li><strong>Animations :</strong> Effets visuels pour les attaques, pioches de cartes et transitions</li>
+                            <li><strong>Gestion des événements :</strong> Système d'écouteurs pour les interactions utilisateur</li>
+                            <li><strong>Écrans multiples :</strong> Menu principal, sélection de deck, écran de combat, historique</li>
+                            <li><strong>Accessibilité :</strong> Support des raccourcis clavier et feedback visuel clair</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-challenge">
+                    <h2><i class="fas fa-trophy"></i> Défis Techniques</h2>
+                    <div class="challenges-grid">
+                        <div class="challenge-card">
+                            <h3><i class="fas fa-cogs"></i> Complexité des règles</h3>
+                            <p>Le jeu Pokémon TCG possède des règles complexes avec de nombreuses exceptions. J'ai dû créer un système flexible permettant d'ajouter facilement de nouvelles cartes avec des effets uniques.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h3><i class="fas fa-sync-alt"></i> Synchronisation État/IHM</h3>
+                            <p>Maintenir la synchronisation entre l'état du jeu (backend) et son affichage (frontend) a nécessité l'implémentation du pattern Observer et une gestion fine des événements.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h3><i class="fas fa-vial"></i> Tests des interactions complexes</h3>
+                            <p>Création de tests unitaires pour des scénarios de jeu complexes impliquant plusieurs cartes avec interactions. J'ai développé une bibliothèque de scénarios de test réutilisables.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech">
+                    <h2><i class="fas fa-tools"></i> Technologies Utilisées</h2>
+                    <div class="tech-stack">
+                        <div class="tech-category">
+                            <h3><i class="fab fa-java"></i> Backend</h3>
+                            <ul>
+                                <li><strong>Java 21</strong> - Langage principal avec les dernières fonctionnalités</li>
+                                <li><strong>JUnit 5</strong> - Framework de tests unitaires</li>
+                                <li><strong>Maven</strong> - Gestion des dépendances et build automation</li>
+                                <li><strong>Design Patterns</strong> - State, Observer, Strategy, Factory</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+                            <ul>
+                                <li><strong>JavaFX</strong> - Framework d'interface graphique</li>
+                                <li><strong>CSS</strong> - Stylisation des composants JavaFX</li>
+                                <li><strong>FXML</strong> - Définition déclarative des interfaces</li>
+                                <li><strong>Animations</strong> - Transitions et effets visuels</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h3><i class="fas fa-code-branch"></i> Outils</h3>
+                            <ul>
+                                <li><strong>Git</strong> - Contrôle de version</li>
+                                <li><strong>IntelliJ IDEA</strong> - Environnement de développement</li>
+                                <li><strong>Scene Builder</strong> - Éditeur visuel pour FXML</li>
+                                <li><strong>Jacoco</strong> - Couverture de code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-learnings">
+                    <h2><i class="fas fa-lightbulb"></i> Apprentissages</h2>
+                    <div class="learnings-list">
+                        <div class="learning-item">
+                            <h3>Architecture Logicielle</h3>
+                            <p>Importance d'une architecture bien pensée dès le début pour faciliter l'évolution et la maintenance.</p>
+                        </div>
+                        <div class="learning-item">
+                            <h3>Tests Unitaires</h3>
+                            <p>Les tests ne sont pas une option mais une nécessité pour garantir la stabilité d'une application complexe.</p>
+                        </div>
+                        <div class="learning-item">
+                            <h3>Expérience Utilisateur</h3>
+                            <p>Même un jeu technique doit être intuitif et agréable à utiliser.</p>
+                        </div>
+                        <div class="learning-item">
+                            <h3>Gestion de Projet</h3>
+                            <p>Découpage en tâches réalisables et suivi régulier de l'avancement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-actions">
+                <a href="https://github.com/ton-username/pokemon-tcg" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-github"></i> Voir le code source
+                </a>
+                <a href="assets/documents/rapport-pokemon-tcg.pdf" class="btn btn-secondary" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Documentation technique
+                </a>
+                <a href="index.html#projects" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> Retour aux projets
+                </a>
+            </div>
+
+            <!-- Navigation entre projets -->
+            <div class="project-navigation">
+                <a href="projet-precedent.html" class="nav-project prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <div>
+                        <span>Projet précédent</span>
+                        <strong>Nom du projet précédent</strong>
+                    </div>
+                </a>
+                <a href="projet-suivant.html" class="nav-project next">
+                    <div>
+                        <span>Projet suivant</span>
+                        <strong>Nom du projet suivant</strong>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>C.LARCHER</h3>
+                <p>Étudiant en BUT Informatique - Parcours RACDV</p>
+                <p>Développeur passionné par les technologies innovantes</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="index.html#projects">Projets</a>
+                <a href="competences.html">Compétences BUT</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> email@example.com</p>
+                <p><i class="fas fa-phone"></i> +33 6 XX XX XX XX</p>
+            </div>
+            <div class="footer-social">
+                <h4>Réseaux</h4>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/ton-profil" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ton-username" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="assets/documents/cv.pdf" target="_blank" aria-label="CV">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 C.LARCHER. Tous droits réservés.</p>
+            <p>Portfolio étudiant - BUT Informatique</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+    // Script pour la galerie d'images
+    document.addEventListener('DOMContentLoaded', function() {
+        // Galerie d'images
+        const thumbs = document.querySelectorAll('.gallery-thumbs .thumb');
+        const mainImg = document.querySelector('.gallery-main .project-img');
+
+        thumbs.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // Retirer la classe active de toutes les miniatures
+                thumbs.forEach(t => t.classList.remove('active'));
+                // Ajouter la classe active à la miniature cliquée
+                this.classList.add('active');
+                // Changer l'image principale
+                if (mainImg) {
+                    mainImg.src = this.src;
+                    mainImg.alt = this.alt;
+                }
+            });
+        });
+
+        // Animation des cartes de défi au scroll
+        const challengeCards = document.querySelectorAll('.challenge-card');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        challengeCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    });
+</script>
+</body>
+</html>

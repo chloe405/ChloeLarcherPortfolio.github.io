@@ -1,0 +1,8 @@
+[2025-12-18 09:32:37] Tentative d'envoi
+À: chloe.larcherhachez@yahoo.com
+De: test@test.com
+Nom: test
+Message: test
+
+[2025-12-18 09:33:41] EMAIL ENVOYÉ AVEC SUCCÈS
+

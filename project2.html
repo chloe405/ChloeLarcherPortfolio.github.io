@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serveur Mail - Administration Système - Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .competence-badge {
+            display: inline-block;
+            background: #2c8c6d;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 5px 5px 5px 0;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .competence-badge:hover {
+            background: #217056;
+            text-decoration: none;
+        }
+
+        .but-competences {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #2c8c6d;
+        }
+
+        .competence-details {
+            margin-top: 15px;
+        }
+
+        .competence-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .competence-item:last-child {
+            border-bottom: none;
+        }
+
+        .server-architecture {
+            background: #e8f5f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .server-diagram {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .server-step {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .step-number {
+            background: #2c8c6d;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="index.html">C.LARCHER</a>
+        </div>
+
+        <!-- Menu principal -->
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </a>
+            <a href="about.html" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span>À propos</span>
+            </a>
+            <a href="index.html#projects" class="nav-link">
+                <i class="fas fa-briefcase"></i>
+                <span>Projets</span>
+            </a>
+            <a href="competences.html" class="nav-link active">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Compétences BUT</span>
+            </a>
+            <a href="#contact" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+
+        <!-- Menu hamburger -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <!-- Overlay pour mobile -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+</nav>
+
+<main class="project-detail">
+    <div class="container">
+        <article class="project-article">
+            <header class="project-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Accueil</a> / <a href="index.html#projects">Projets</a> / <span>Serveur Mail</span>
+                </div>
+                <h1>Infrastructure Serveur Triple Services</h1>
+                <p class="project-subtitle">Déploiement et sécurisation d'une infrastructure complète avec serveurs MySQL, Apache et Mail</p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <strong><i class="fas fa-calendar"></i> Date :</strong>
+                        <span>Janvier 2024</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-tag"></i> Catégorie :</strong>
+                        <span>Administration Système / Réseaux</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-users"></i> Équipe :</strong>
+                        <span>Projet en binôme</span>
+                    </div>
+                </div>
+
+                <!-- Badges de compétences BUT -->
+                <div class="competence-tags">
+                    <strong><i class="fas fa-graduation-cap"></i> Compétences BUT :</strong><br>
+                    <a href="competences.html#administrer" class="competence-badge">C3 : Administrer</a>
+                    <a href="competences.html#realiser" class="competence-badge">C1 : Réaliser</a>
+                    <a href="competences.html#collaborer" class="competence-badge">C6 : Collaborer</a>
+                </div>
+            </header>
+
+            <div class="project-gallery">
+                <div class="gallery-main">
+                    <img src="assets/images/vmI.png" alt="Architecture des serveurs virtuels" class="project-img">
+                </div>
+                <div class="gallery-thumbs">
+                    <img src="assets/images/vmI.png" alt="Console VirtualBox" class="thumb active">
+                    <img src="assets/images/vmI2.png" alt="Configuration serveur" class="thumb">
+                    <img src="assets/images/vmI3.png" alt="Interface web phpMyAdmin" class="thumb">
+                </div>
+            </div>
+
+            <div class="project-content">
+                <!-- Section Compétences BUT -->
+                <section class="but-competences">
+                    <h2><i class="fas fa-link"></i> Liens avec les Compétences du BUT</h2>
+                    <p>Ce projet d'administration système m'a permis de développer des compétences clés du BUT Informatique, particulièrement pertinentes pour les <strong>parcours B et C</strong> (Déploiement d'applications et Administration de données).</p>
+
+                    <div class="competence-details">
+                        <div class="competence-item">
+                            <h3><a href="competences.html#administrer" style="color: #2c8c6d;">C3 : Administrer des systèmes informatiques communicants complexes</a></h3>
+                            <p><strong>Niveau 2 atteint :</strong> Déployer des services dans une architecture réseau</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> <strong>Virtualisation :</strong> Création et configuration de machines virtuelles sous VirtualBox</li>
+                                <li><i class="fas fa-check"></i> <strong>Services réseau :</strong> Installation et configuration d'Apache, MySQL et Postfix/Dovecot</li>
+                                <li><i class="fas fa-check"></i> <strong>Sécurisation :</strong> Configuration de pare-feu (UFW), SSL/TLS et authentification sécurisée</li>
+                                <li><i class="fas fa-check"></i> <strong>Interconnexion :</strong> Mise en réseau des VMs et configuration des règles de routage</li>
+                            </ul>
+                        </div>
+
+                        <div class="competence-item">
+                            <h3><a href="competences.html#realiser" style="color: #2c8c6d;">C1 : Réaliser un développement d'application</a></h3>
+                            <p><strong>Niveau 2 atteint :</strong> Partir des exigences et aller jusqu'à une application complète</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> <strong>Interface web :</strong> Développement d'une interface PHP pour visualiser la base de données</li>
+                                <li><i class="fas fa-check"></i> <strong>Scripting :</strong> Création de scripts Bash pour l'automatisation des tâches d'administration</li>
+                                <li><i class="fas fa-check"></i> <strong>Base de données :</strong> Modélisation et implémentation d'une base MySQL pour la gestion des mails</li>
+                                <li><i class="fas fa-check"></i> <strong>Tests fonctionnels :</strong> Validation du bon fonctionnement de l'ensemble du système</li>
+                            </ul>
+                        </div>
+
+                        <div class="competence-item">
+                            <h3><a href="competences.html#collaborer" style="color: #2c8c6d;">C6 : Collaborer au sein d'une équipe informatique</a></h3>
+                            <p><strong>Niveau 2 atteint :</strong> Situer son rôle et ses missions au sein d'une équipe</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> <strong>Répartition des tâches :</strong> Organisation du travail en binôme avec spécialisation par serveur</li>
+                                <li><i class="fas fa-check"></i> <strong>Documentation partagée :</strong> Création d'une documentation technique collaborative</li>
+                                <li><i class="fas fa-check"></i> <strong>Résolution collaborative :</strong> Travail en pair programming sur les problèmes complexes</li>
+                                <li><i class="fas fa-check"></i> <strong>Présentation technique :</strong> Démonstration conjointe du système fonctionnel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="project-overview">
+                    <h2><i class="fas fa-eye"></i> Architecture du Système</h2>
+
+                    <div class="server-architecture">
+                        <h3><i class="fas fa-server"></i> Infrastructure à 3 Serveurs</h3>
+
+                        <div class="server-step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <strong>Serveur MySQL (VM1)</strong>
+                                <p>Base de données relationnelle pour le stockage des utilisateurs et des mails</p>
+                                <ul>
+                                    <li>Ubuntu Server 22.04 LTS</li>
+                                    <li>MySQL 8.0 avec authentification sécurisée</li>
+                                    <li>phpMyAdmin pour l'administration web</li>
+                                    <li>Backups automatisés avec mysqldump</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="server-step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <strong>Serveur Web Apache (VM2)</strong>
+                                <p>Interface d'administration et visualisation des données</p>
+                                <ul>
+                                    <li>Apache 2.4 avec modules PHP</li>
+                                    <li>Interface PHP personnalisée</li>
+                                    <li>Certificat SSL auto-signé</li>
+                                    <li>Contrôle d'accès par .htaccess</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="server-step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <strong>Serveur Mail (VM3)</strong>
+                                <p>Service complet d'envoi et réception d'emails</p>
+                                <ul>
+                                    <li>Postfix pour le transport SMTP</li>
+                                    <li>Dovecot pour l'accès IMAP/POP3</li>
+                                    <li>Authentification via MySQL</li>
+                                    <li>Filtrage anti-spam avec SpamAssassin</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-phase">
+                        <h3><i class="fas fa-project-diagram"></i> Fonctionnement Global</h3>
+                        <p>L'architecture permet à deux utilisateurs de s'échanger des emails tout en visualisant l'état de la base de données via une interface web sécurisée :</p>
+                        <ol>
+                            <li>L'utilisateur se connecte à son client mail (Thunderbird/Outlook)</li>
+                            <li>Le serveur mail authentifie l'utilisateur via la base MySQL</li>
+                            <li>Les emails sont stockés dans la base de données</li>
+                            <li>L'administrateur peut visualiser les statistiques via l'interface web</li>
+                            <li>Toutes les communications sont chiffrées (TLS/SSL)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="project-challenge">
+                    <h2><i class="fas fa-trophy"></i> Défis Techniques</h2>
+                    <div class="challenges-grid">
+                        <div class="challenge-card">
+                            <h3><i class="fas fa-network-wired"></i> Interconnexion des Services</h3>
+                            <p>Faire communiquer trois serveurs distincts sur des machines virtuelles différentes a nécessité une configuration réseau précise (NAT, réseaux internes) et la gestion des règles de pare-feu.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h3><i class="fas fa-shield-alt"></i> Sécurisation Multi-niveaux</h3>
+                            <p>Chaque serveur nécessitait une approche de sécurité spécifique : configuration SSL pour Apache, authentification MySQL sécurisée, et chiffrement des communications mail avec Postfix/Dovecot.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h3><i class="fas fa-database"></i> Synchronisation des Authentifications</h3>
+                            <p>L'authentification unique entre le serveur mail et la base de données MySQL a nécessité la création d'une structure de données cohérente et des requêtes SQL optimisées.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-solution">
+                    <h2><i class="fas fa-cogs"></i> Solution Implementée</h2>
+
+                    <h3><i class="fas fa-user-shield"></i> Sécurité</h3>
+                    <ul>
+                        <li><strong>Chiffrement :</strong> TLS/SSL sur tous les services (HTTPS, SMTPS, IMAPS)</li>
+                        <li><strong>Authentification :</strong> Système à deux facteurs pour l'administration</li>
+                        <li><strong>Pare-feu :</strong> Règles UWF restrictives (seuls les ports nécessaires ouverts)</li>
+                        <li><strong>Audit :</strong> Journalisation centralisée avec logwatch</li>
+                    </ul>
+
+                    <h3><i class="fas fa-tachometer-alt"></i> Performance</h3>
+                    <ul>
+                        <li><strong>Optimisation MySQL :</strong> Configuration my.cnf adaptée aux ressources limitées des VMs</li>
+                        <li><strong>Cache Apache :</strong> Activation du cache mod_cache pour l'interface web</li>
+                        <li><strong>Monitoring :</strong> Scripts de monitoring personnalisés avec alertes</li>
+                    </ul>
+
+                    <h3><i class="fas fa-sync-alt"></i> Maintenance</h3>
+                    <ul>
+                        <li><strong>Automatisation :</strong> Scripts Bash pour les sauvegardes et mises à jour</li>
+                        <li><strong>Documentation :</strong> Wiki détaillé avec procédures de dépannage</li>
+                        <li><strong>Tests :</strong> Suite de tests fonctionnels automatisés</li>
+                    </ul>
+                </div>
+
+                <div class="project-tech">
+                    <h2><i class="fas fa-tools"></i> Technologies et Outils</h2>
+                    <div class="tech-stack">
+                        <div class="tech-category">
+                            <h3><i class="fas fa-server"></i> Virtualisation & OS</h3>
+                            <ul>
+                                <li><strong>VirtualBox</strong> - Hyperviseur de virtualisation</li>
+                                <li><strong>Ubuntu Server 22.04</strong> - Système d'exploitation</li>
+                                <li><strong>Bash</strong> - Scripting et automatisation</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h3><i class="fas fa-database"></i> Services</h3>
+                            <ul>
+                                <li><strong>MySQL 8.0</strong> - Base de données relationnelle</li>
+                                <li><strong>Apache 2.4</strong> - Serveur web</li>
+                                <li><strong>Postfix + Dovecot</strong> - Serveur mail complet</li>
+                                <li><strong>PHP 8.1</strong> - Interface web dynamique</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h3><i class="fas fa-shield-alt"></i> Sécurité</h3>
+                            <ul>
+                                <li><strong>UFW</strong> - Pare-feu unifié</li>
+                                <li><strong>OpenSSL</strong> - Certificats et chiffrement</li>
+                                <li><strong>SpamAssassin</strong> - Filtrage anti-spam</li>
+                                <li><strong>Fail2ban</strong> - Protection contre les attaques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-learnings">
+                    <h2><i class="fas fa-lightbulb"></i> Apprentissages Clés</h2>
+                    <div class="learnings-list">
+                        <div class="learning-item">
+                            <h3>Architecture Réseau</h3>
+                            <p>Compréhension approfondie des concepts de réseaux virtuels, NAT, et routage entre machines virtuelles.</p>
+                        </div>
+                        <div class="learning-item">
+                            <h3>Sécurité Système</h3>
+                            <p>Importance d'une approche en couches pour la sécurité : pare-feu, chiffrement, authentification, monitoring.</p>
+                        </div>
+                        <div class="learning-item">
+                            <h3>Administration Linux</h3>
+                            <p>Maîtrise des commandes système avancées, gestion des services systemd, et diagnostic de problèmes.</p>
+                        </div>
+                        <div class="learning-item">
+                            <h3>Documentation Technique</h3>
+                            <p>Nécessité d'une documentation précise pour la reproductibilité et la maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-actions">
+                <a href="https://github.com/ton-username/serveur-mail-infra" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-github"></i> Scripts et Configuration
+                </a>
+                <a href="assets/documents/documentation-serveur.pdf" class="btn btn-secondary" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Documentation technique
+                </a>
+                <a href="index.html#projects" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> Retour aux projets
+                </a>
+            </div>
+
+            <!-- Navigation entre projets -->
+            <div class="project-navigation">
+                <a href="pokemon-tcg.html" class="nav-project prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <div>
+                        <span>Projet précédent</span>
+                        <strong>Jeu Pokémon TCG</strong>
+                    </div>
+                </a>
+                <a href="projet-suivant.html" class="nav-project next">
+                    <div>
+                        <span>Projet suivant</span>
+                        <strong>Nom du projet suivant</strong>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>C.LARCHER</h3>
+                <p>Étudiant en BUT Informatique - Parcours RACDV</p>
+                <p>Spécialisé en développement et administration système</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="index.html#projects">Projets</a>
+                <a href="competences.html">Compétences BUT</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> email@example.com</p>
+                <p><i class="fas fa-phone"></i> +33 6 XX XX XX XX</p>
+            </div>
+            <div class="footer-social">
+                <h4>Réseaux</h4>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/ton-profil" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ton-username" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="assets/documents/cv.pdf" target="_blank" aria-label="CV">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 C.LARCHER. Tous droits réservés.</p>
+            <p>Portfolio étudiant - BUT Informatique - Compétences en administration système</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+    // Script pour la galerie d'images
+    document.addEventListener('DOMContentLoaded', function() {
+        // Galerie d'images
+        const thumbs = document.querySelectorAll('.gallery-thumbs .thumb');
+        const mainImg = document.querySelector('.gallery-main .project-img');
+
+        thumbs.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // Retirer la classe active de toutes les miniatures
+                thumbs.forEach(t => t.classList.remove('active'));
+                // Ajouter la classe active à la miniature cliquée
+                this.classList.add('active');
+                // Changer l'image principale
+                if (mainImg) {
+                    mainImg.src = this.src;
+                    mainImg.alt = this.alt;
+                }
+            });
+        });
+
+        // Animation des cartes de défi au scroll
+        const challengeCards = document.querySelectorAll('.challenge-card');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        challengeCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+
+        // Animation des étapes du serveur
+        const serverSteps = document.querySelectorAll('.server-step');
+        serverSteps.forEach((step, index) => {
+            step.style.opacity = '0';
+            step.style.transform = 'translateX(-20px)';
+            step.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+
+            setTimeout(() => {
+                step.style.opacity = '1';
+                step.style.transform = 'translateX(0)';
+            }, 300 + (index * 100));
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  php:
+    image: php:8.2-apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    # Configuration PHP via variables d'environnement
+    environment:
+      PHP_MEMORY_LIMIT: 256M
+      PHP_UPLOAD_MAX_FILESIZE: 64M
+      PHP_POST_MAX_SIZE: 64M
+      PHP_DISPLAY_ERRORS: On
+      PHP_SENDMAIL_PATH: "/usr/sbin/sendmail -t -i"
+    command: >
+      bash -c "
+      echo 'sendmail_path=/usr/sbin/sendmail -t -i' > /usr/local/etc/php/conf.d/mail.ini &&
+      echo 'display_errors=On' >> /usr/local/etc/php/conf.d/mail.ini &&
+      docker-php-entrypoint apache2-foreground
+      "

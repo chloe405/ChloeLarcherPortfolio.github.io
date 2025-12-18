@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences BUT Informatique | Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation principale -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="index.html">C.LARCHER</a>
+        </div>
+
+        <!-- Menu principal -->
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">
+                <span>🏠</span>
+                Accueil
+            </a>
+            <a href="about.html" class="nav-link">
+                <span>👤</span>
+                À propos
+            </a>
+            <a href="#projects" class="nav-link">
+                <span>💼</span>
+                Projets
+            </a>
+            <a href="competences.html" class="nav-link">
+                <span>🏠</span>
+                Compétences du BUT
+            </a>
+            <a href="#contact" class="nav-link">
+                <span>📧</span>
+                Contact
+            </a>
+        </div>
+
+        <!-- Menu hamburger -->
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Page des compétences -->
+<main class="page-competences">
+    <div class="container">
+        <header class="page-header-competences">
+            <h1>Compétences du BUT Informatique</h1>
+            <p class="lead">Explorez les compétences acquises durant les trois années de formation en BUT Informatique, organisées hiérarchiquement du niveau 1 au niveau 3.</p>
+        </header>
+
+        <!-- Légende des couleurs -->
+        <section class="legend-annees">
+            <h3><i class="fas fa-palette"></i> Légende des années</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">1</div>
+                    <div class="legend-content">
+                        <strong>Année 1</strong>
+                        <span>Fondamentaux et bases de l'informatique</span>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">2</div>
+                    <div class="legend-content">
+                        <strong>Année 2</strong>
+                        <span>Approfondissement et projets complexes</span>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);">3</div>
+                    <div class="legend-content">
+                        <strong>Année 3</strong>
+                        <span>Expertise et spécialisation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation par année -->
+        <div class="nav-annees">
+            <button class="nav-annee-btn active" data-annee="1">
+                <i class="fas fa-arrow-up"></i>
+                Année 1 - Fondamentaux
+            </button>
+            <button class="nav-annee-btn" data-annee="2">
+                <i class="fas fa-layer-group"></i>
+                Année 2 - Approfondissement
+            </button>
+            <button class="nav-annee-btn" data-annee="3">
+                <i class="fas fa-crown"></i>
+                Année 3 - Expertise
+            </button>
+        </div>
+
+        <!-- Année 1 - Tous parcours -->
+        <section class="section-annee annee-1 active" id="annee1">
+            <div class="annee-header">
+                <h2>
+                    <i class="fas fa-rocket"></i>
+                    ANNÉE 1 - Tronc commun
+                </h2>
+                <p>Acquisition des compétences fondamentales communes aux 4 parcours du BUT Informatique</p>
+            </div>
+
+            <!-- Compétence 1 : Réaliser -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-code"></i> COMPÉTENCE 1 : RÉALISER UN DÉVELOPPEMENT D’APPLICATION</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 1</span>
+                        <h4>Développer des applications informatiques simples</h4>
+                        <p>Implémenter des conceptions simples et développer des interfaces utilisateurs</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Implémenter des conceptions simples</li>
+                                    <li>Élaborer des conceptions simples</li>
+                                    <li>Faire des essais et évaluer leurs résultats</li>
+                                    <li>Développer des interfaces utilisateurs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 2 : Optimiser -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-chart-line"></i> COMPÉTENCE 2 : OPTIMISER DES APPLICATIONS</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 1</span>
+                        <h4>Appréhender et construire des algorithmes</h4>
+                        <p>Analyser un problème avec méthode et comparer des algorithmes</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Analyser un problème avec méthode</li>
+                                    <li>Comparer des algorithmes pour des problèmes classiques</li>
+                                    <li>Formaliser et mettre en œuvre des outils mathématiques</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 3 : Administrer -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-server"></i> COMPÉTENCE 3 : ADMINISTRER DES SYSTÈMES INFORMATIQUES COMMUNICANTS COMPLEXES</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 1</span>
+                        <h4>Installer et configurer un poste de travail</h4>
+                        <p>Identifier les composants d'un système et configurer un poste dans un réseau</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Identifier les composants matériels et logiciels</li>
+                                    <li>Utiliser les fonctionnalités d'un système multiutilisateurs</li>
+                                    <li>Installer et configurer un système d'exploitation</li>
+                                    <li>Configurer un poste dans un réseau d'entreprise</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 4 : Gérer les données -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-database"></i> COMPÉTENCE 4 : GÉRER DES DONNÉES DE L’INFORMATION</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 1</span>
+                        <h4>Concevoir et mettre en place une base de données à partir d'un cahier des charges client</h4>
+                        <p>Mettre à jour, interroger et concevoir une base de données relationnelle</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Mettre à jour et interroger une base de données relationnelle</li>
+                                    <li>Visualiser des données</li>
+                                    <li>Concevoir une base de données relationnelle à partir d'un cahier des charges</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 5 : Conduire -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-project-diagram"></i> COMPÉTENCE 5 : CONDUIRE UN PROJET</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 1</span>
+                        <h4>Identifier les besoins métiers des clients et des utilisateurs</h4>
+                        <p>Appréhender les besoins et identifier les acteurs d'un projet</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Appréhender les besoins du client et de l'utilisateur</li>
+                                    <li>Mettre en place les outils de gestion de projet</li>
+                                    <li>Identifier les acteurs et les phases d'un cycle de développement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 6 : Collaborer -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-users"></i> COMPÉTENCE 6 : COLLABORER AU SEIN D’UNE ÉQUIPE INFORMATIQUE</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 1</span>
+                        <h4>Identifier ses aptitudes pour travailler dans une équipe</h4>
+                        <p>Appréhender l'écosystème numérique et acquérir des compétences interpersonnelles</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Appréhender l'écosystème numérique</li>
+                                    <li>Découvrir les aptitudes requises selon les secteurs</li>
+                                    <li>Identifier les statuts et rôles dans une équipe pluridisciplinaire</li>
+                                    <li>Acquérir les compétences interpersonnelles pour travailler en équipe</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Année 2 - Parcours RACDV -->
+        <section class="section-annee annee-2" id="annee2">
+            <div class="annee-header">
+                <h2>
+                    <i class="fas fa-layer-group"></i>
+                    ANNÉE 2 - Parcours RACDV
+                </h2>
+                <p>Approfondissement des compétences en développement d'applications et début de spécialisation</p>
+                <p class="parcours-badge">
+                    <i class="fas fa-code"></i> Parcours A : Réalisation d'applications
+                </p>
+            </div>
+
+            <!-- Compétence 1 : Réaliser - Niveau 2 -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-code"></i> COMPÉTENCE 1 : RÉALISER UN DÉVELOPPEMENT D'APPLICATION</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 2</span>
+                        <h4>Partir des exigences et aller jusqu'à une application complète</h4>
+                        <p>Développement d'applications complexes avec démarche qualité</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles</li>
+                                    <li>Appliquer des principes d'accessibilité et d'ergonomie</li>
+                                    <li>Adopter de bonnes pratiques de conception et de programmation</li>
+                                    <li>Vérifier et valider la qualité de l'application par les tests</li>
+                                </ul>
+                                <h5><i class="fas fa-book"></i> Ressources principales (S3 & S4)</h5>
+                                <ul>
+                                    <li>Développement web avancé</li>
+                                    <li>Qualité de développement</li>
+                                    <li>Programmation système</li>
+                                    <li>SQL et programmation</li>
+                                    <li>Développement mobile</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 2 : Optimiser - Niveau 2 -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-chart-line"></i> COMPÉTENCE 2 : OPTIMISER DES APPLICATIONS</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 2</span>
+                        <h4>Sélectionner les algorithmes adéquats pour répondre à un problème donné</h4>
+                        <p>Techniques algorithmiques avancées et optimisation</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Choisir des structures de données complexes adaptées</li>
+                                    <li>Utiliser des techniques algorithmiques avancées (IA, optimisation...)</li>
+                                    <li>Comprendre les enjeux de sécurisation des données et du code</li>
+                                    <li>Évaluer l'impact environnemental et sociétal des solutions</li>
+                                </ul>
+                                <h5><i class="fas fa-book"></i> Ressources principales (S3 & S4)</h5>
+                                <ul>
+                                    <li>Analyse et optimisation</li>
+                                    <li>Probabilités et statistiques</li>
+                                    <li>Cryptographie</li>
+                                    <li>Méthodes d'optimisation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 3 : Administrer - Niveau 2 -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-server"></i> COMPÉTENCE 3 : ADMINISTRER DES SYSTÈMES INFORMATIQUES COMMUNICANTS COMPLEXES</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 2</span>
+                        <h4>Déployer des services dans une architecture réseau</h4>
+                        <p>Conception d'applications communicantes et virtualisation</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Concevoir et développer des applications communicantes</li>
+                                    <li>Utiliser des serveurs et services réseaux virtualisés</li>
+                                    <li>Sécuriser les services et données d'un système</li>
+                                </ul>
+                                <h5><i class="fas fa-book"></i> Ressources principales (S3 & S4)</h5>
+                                <ul>
+                                    <li>Programmation système</li>
+                                    <li>Architecture réseaux</li>
+                                    <li>Virtualisation</li>
+                                    <li>Services réseau</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 4 : Gérer les données - Niveau 2 -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-database"></i> COMPÉTENCE 4 : GÉRER DES DONNÉES DE L'INFORMATION</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 2</span>
+                        <h4>Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</h4>
+                        <p>Intégration données-application et sécurisation</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Optimiser les modèles de données de l'entreprise</li>
+                                    <li>Assurer la confidentialité des données</li>
+                                    <li>Organiser la restitution de données par programmation et visualisation</li>
+                                    <li>Manipuler des données hétérogènes</li>
+                                </ul>
+                                <h5><i class="fas fa-book"></i> Ressources principales (S3 & S4)</h5>
+                                <ul>
+                                    <li>SQL et programmation avancée</li>
+                                    <li>Bases de données non relationnelles</li>
+                                    <li>Cryptographie et sécurité</li>
+                                    <li>Visualisation de données</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 5 : Conduire - Niveau 2 -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-project-diagram"></i> COMPÉTENCE 5 : CONDUIRE UN PROJET</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 2</span>
+                        <h4>Appliquer une démarche de suivi de projet en fonction des besoins métiers</h4>
+                        <p>Gestion de projet informatique et méthodologies Agile</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Identifier les processus présents dans une organisation</li>
+                                    <li>Formaliser les besoins du client et de l'utilisateur</li>
+                                    <li>Identifier les critères de faisabilité d'un projet</li>
+                                    <li>Définir et mettre en œuvre une démarche de suivi de projet</li>
+                                </ul>
+                                <h5><i class="fas fa-book"></i> Ressources principales (S3 & S4)</h5>
+                                <ul>
+                                    <li>Management des systèmes d'information</li>
+                                    <li>Droit des contrats et numérique</li>
+                                    <li>Communication professionnelle</li>
+                                    <li>Gestion de projet agile</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 6 : Collaborer - Niveau 2 -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-users"></i> COMPÉTENCE 6 : COLLABORER AU SEIN D'UNE ÉQUIPE INFORMATIQUE</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 2</span>
+                        <h4>Situer son rôle et ses missions au sein d'une équipe informatique</h4>
+                        <p>Intégration en environnement professionnel et communication</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Comprendre la diversité de l'informatique dans une organisation</li>
+                                    <li>Appliquer une démarche pour intégrer une équipe</li>
+                                    <li>Mobiliser les compétences interpersonnelles</li>
+                                    <li>Rendre compte de son activité professionnelle</li>
+                                </ul>
+                                <h5><i class="fas fa-book"></i> Ressources principales (S3 & S4)</h5>
+                                <ul>
+                                    <li>Communication professionnelle</li>
+                                    <li>Anglais technique</li>
+                                    <li>Projet personnel et professionnel (PPP)</li>
+                                    <li>Travail d'équipe et collaboration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SAÉ spécifiques RACDV -->
+            <div class="categorie-competences sae-section">
+                <h3><i class="fas fa-tasks"></i> SITUATIONS D'APPRENTISSAGE ET D'ÉVALUATION (SAÉ) - RACDV</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <h4>S3.A.01 - Développement d'application</h4>
+                        <p>Conception et développement d'une application complète</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Description</h5>
+                                <p>Projet de développement d'application mettant en œuvre l'ensemble du cycle de vie : analyse des besoins, conception, développement, tests et documentation.</p>
+                                <h5><i class="fas fa-clock"></i> Volume horaire</h5>
+                                <p>199h (dont 120h en autonomie)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carte-competence">
+                        <h4>S4.A.01 - Développement d'application avancé</h4>
+                        <p>Développement d'application avec intégration de technologies avancées</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Description</h5>
+                                <p>Projet de développement plus complexe intégrant des aspects de performance, sécurité et utilisabilité avancée.</p>
+                                <h5><i class="fas fa-clock"></i> Volume horaire</h5>
+                                <p>82h (dont 45h en autonomie)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Année 3 - Parcours RACDV -->
+        <section class="section-annee annee-3" id="annee3">
+            <div class="annee-header">
+                <h2>
+                    <i class="fas fa-crown"></i>
+                    ANNÉE 3 - Spécialisation RACDV
+                </h2>
+                <p>Expertise en développement d'applications complexes et préparation à l'insertion professionnelle</p>
+                <p class="parcours-badge">
+                    <i class="fas fa-laptop-code"></i> Parcours A : Concepteur-développeur d'applications
+                </p>
+            </div>
+
+            <!-- Compétence 1 : Réaliser - Niveau 3 RACDV -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-code"></i> COMPÉTENCE 1 : RÉALISER UN DÉVELOPPEMENT D'APPLICATION (NIVEAU 3)</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 3</span>
+                        <h4>Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT…)</h4>
+                        <p>Développement multiplateforme et architectures adaptatives</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Choisir et implémenter les architectures adaptées aux différents supports</li>
+                                    <li>Faire évoluer une application existante vers de nouvelles plateformes</li>
+                                    <li>Intégrer des solutions dans un environnement de production hétérogène</li>
+                                </ul>
+                                <h5><i class="fas fa-book"></i> Ressources principales (S5 & S6)</h5>
+                                <ul>
+                                    <li>Programmation avancée</li>
+                                    <li>Développement multiplateforme</li>
+                                    <li>Architectures logicielles adaptatives</li>
+                                    <li>Intégration continue et déploiement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 2 : Optimiser - Niveau 3 RACDV -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-chart-line"></i> COMPÉTENCE 2 : OPTIMISER DES APPLICATIONS (NIVEAU 3)</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 3</span>
+                        <h4>Analyser et optimiser des applications</h4>
+                        <p>Performance, qualité et optimisation avancée</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Anticiper les résultats de diverses métriques (temps d'exécution, occupation mémoire…)</li>
+                                    <li>Profiler, analyser et justifier le comportement d'un code existant</li>
+                                    <li>Choisir et utiliser des bibliothèques et méthodes dédiées (IA, jeux vidéo, parallélisme…)</li>
+                                </ul>
+                                <h5><i class="fas fa-book"></i> Ressources principales (S5 & S6)</h5>
+                                <ul>
+                                    <li>Qualité algorithmique</li>
+                                    <li>Programmation multimédia</li>
+                                    <li>Automatisation des tests</li>
+                                    <li>Optimisation des performances</li>
+                                    <li>Modélisations mathématiques avancées</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 6 : Collaborer - Niveau 3 -->
+            <div class="categorie-competences">
+                <h3><i class="fas fa-users-cog"></i> COMPÉTENCE 6 : COLLABORER AU SEIN D'UNE ÉQUIPE INFORMATIQUE (NIVEAU 3)</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <span class="badge-niveau">Niveau 3</span>
+                        <h4>Manager une équipe informatique</h4>
+                        <p>Leadership technique et gestion d'équipe</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Apprentissages critiques</h5>
+                                <ul>
+                                    <li>Organiser et partager une veille numérique</li>
+                                    <li>Identifier les enjeux de l'économie de l'innovation numérique</li>
+                                    <li>Guider la conduite du changement informatique</li>
+                                    <li>Accompagner le management de projet informatique</li>
+                                </ul>
+                                <h5><i class="fas fa-book"></i> Ressources principales (S5 & S6)</h5>
+                                <ul>
+                                    <li>Initiation au management</li>
+                                    <li>Communication avancée</li>
+                                    <li>Économie durable et numérique</li>
+                                    <li>Développement des compétences transversales</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ressources spécifiques RACDV -->
+            <div class="categorie-competences ressources-section">
+                <h3><i class="fas fa-book-open"></i> RESSOURCES SPÉCIFIQUES RACDV (S5 & S6)</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <h4>Qualité algorithmique et programmation avancée</h4>
+                        <p>Optimisation des algorithmes et techniques de programmation expertes</p>
+                    </div>
+
+                    <div class="carte-competence">
+                        <h4>Programmation multimédia et développement mobile</h4>
+                        <p>Technologies multimédias et développement pour plateformes mobiles</p>
+                    </div>
+
+                    <div class="carte-competence">
+                        <h4>Automatisation et virtualisation avancée</h4>
+                        <p>Outils DevOps et environnements virtualisés</p>
+                    </div>
+
+                    <div class="carte-competence">
+                        <h4>Nouvelles bases de données et aide à la décision</h4>
+                        <p>Bases NoSQL et systèmes décisionnels</p>
+                    </div>
+
+                    <div class="carte-competence">
+                        <h4>Maintenance applicative et évolution d'applications</h4>
+                        <p>Refactoring, legacy code et modernisation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SAÉ spécifiques RACDV année 3 -->
+            <div class="categorie-competences sae-section">
+                <h3><i class="fas fa-tasks"></i> SAÉ DE SPÉCIALISATION RACDV (S5 & S6)</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <h4>S5.A.01 - Développement avancé</h4>
+                        <p>Projet complexe intégrant technologies avancées et méthodologies Agile</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Description</h5>
+                                <p>Conception et développement d'une application complexe avec focus sur l'architecture, la performance et la maintenabilité.</p>
+                                <h5><i class="fas fa-clock"></i> Volume horaire</h5>
+                                <p>249h (dont 195h en autonomie)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carte-competence">
+                        <h4>S6.A.01 - Évolution d'une application</h4>
+                        <p>Refactoring et modernisation d'une application existante</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Description</h5>
+                                <p>Projet de maintenance évolutive et corrective sur une base de code existante.</p>
+                                <h5><i class="fas fa-clock"></i> Volume horaire</h5>
+                                <p>62h (dont 45h en autonomie)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stages RACDV -->
+            <div class="categorie-competences stage-section">
+                <h3><i class="fas fa-briefcase"></i> STAGES - PARCOURS RACDV</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <h4>Stage de fin de 2ème année (S4)</h4>
+                        <p>Immersion professionnelle en développement d'applications</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Objectifs</h5>
+                                <ul>
+                                    <li>Mettre en pratique les compétences acquises en développement</li>
+                                    <li>Participer à un projet réel en entreprise</li>
+                                    <li>Découvrir l'environnement professionnel du développeur</li>
+                                </ul>
+                                <h5><i class="fas fa-clock"></i> Durée</h5>
+                                <p>8 à 10 semaines</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carte-competence">
+                        <h4>Stage de fin d'études (S6)</h4>
+                        <p>Projet de développement complexe en contexte professionnel</p>
+                        <div class="details-competence">
+                            <div class="contenu-details">
+                                <h5><i class="fas fa-info-circle"></i> Objectifs</h5>
+                                <ul>
+                                    <li>Concevoir et développer une application complète</li>
+                                    <li>Gérer un projet de A à Z en autonomie</li>
+                                    <li>Valider les compétences expertes du parcours</li>
+                                </ul>
+                                <h5><i class="fas fa-clock"></i> Durée</h5>
+                                <p>14 à 16 semaines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Débouchés RACDV -->
+            <div class="categorie-competences debouches-section">
+                <h3><i class="fas fa-graduation-cap"></i> DÉBOUCHÉS PROFESSIONNELS - RACDV</h3>
+                <div class="grille-competences">
+                    <div class="carte-competence">
+                        <h4>Postes juniors après le BUT</h4>
+                        <ul>
+                            <li><strong>Développeur full-stack</strong> (web, mobile, desktop)</li>
+                            <li><strong>Concepteur-développeur d'applications</strong></li>
+                            <li><strong>Développeur DevOps</strong></li>
+                            <li><strong>Testeur / QA Engineer</strong></li>
+                            <li><strong>Tech Lead junior</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="carte-competence">
+                        <h4>Évolutions possibles après expérience</h4>
+                        <ul>
+                            <li><strong>Lead Developer</strong> (selon secteurs et technologies)</li>
+                            <li><strong>Architecte logiciel</strong></li>
+                            <li><strong>Chef de projet technique</strong></li>
+                            <li><strong>Expert en développement</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="carte-competence">
+                        <h4>Secteurs d'activité</h4>
+                        <ul>
+                            <li>ESN (Entreprises de Services du Numérique)</li>
+                            <li>Éditeurs de logiciels</li>
+                            <li>Banques, assurances, grande distribution</li>
+                            <li>Industrie et e-commerce</li>
+                            <li>Startups et scale-ups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Navigation entre années
+        const yearButtons = document.querySelectorAll('.nav-annee-btn');
+        const yearSections = document.querySelectorAll('.section-annee');
+
+        yearButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetYear = button.getAttribute('data-annee');
+
+                // Mettre à jour les boutons actifs
+                yearButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Afficher/masquer les sections
+                yearSections.forEach(section => {
+                    section.classList.remove('active');
+                    if (section.classList.contains(`annee-${targetYear}`)) {
+                        section.classList.add('active');
+
+                        // Scroll doux vers la section
+                        setTimeout(() => {
+                            section.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }, 300);
+                    }
+                });
+
+                // Mettre à jour l'URL
+                history.pushState(null, null, `#annee${targetYear}`);
+            });
+        });
+
+        // Ouvrir/fermer les détails des compétences
+        const competenceCards = document.querySelectorAll('.carte-competence');
+        competenceCards.forEach(card => {
+            card.addEventListener('click', function(e) {
+                // Empêcher la fermeture si on clique sur les détails
+                if (!e.target.closest('.contenu-details') && !e.target.classList.contains('fa-info-circle')) {
+                    // Fermer les autres cartes de la même catégorie
+                    const parentCategory = this.closest('.categorie-competences');
+                    const otherCards = parentCategory.querySelectorAll('.carte-competence');
+                    otherCards.forEach(otherCard => {
+                        if (otherCard !== this) {
+                            otherCard.classList.remove('active');
+                        }
+                    });
+
+                    // Basculer l'état de cette carte
+                    this.classList.toggle('active');
+                }
+            });
+        });
+
+        // Gestion du hash URL au chargement
+        const hash = window.location.hash;
+        if (hash) {
+            const yearFromHash = hash.replace('#annee', '');
+            const correspondingButton = document.querySelector(`.nav-annee-btn[data-annee="${yearFromHash}"]`);
+            if (correspondingButton) {
+                correspondingButton.click();
+            }
+        }
+
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observer les cartes de compétences
+        document.querySelectorAll('.carte-competence').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation améliorée -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="index.html">C.LARCHER</a>
+        </div>
+
+        <!-- Menu principal -->
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">
+                <span>🏠</span>
+                Accueil
+            </a>
+            <a href="about.html" class="nav-link">
+                <span>👤</span>
+                À propos
+            </a>
+            <a href="#projects" class="nav-link">
+                <span>💼</span>
+                Projets
+            </a>
+            <a href="competences.html" class="nav-link">
+                <span>🏠</span>
+                Compétences du BUT
+            </a>
+            <a href="#contact" class="nav-link">
+                <span>📧</span>
+                Contact
+            </a>
+        </div>
+
+        <!-- Menu hamburger -->
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Overlay pour mobile -->
+    <div class="nav-overlay"></div>
+</nav>
+
+<!-- Hero Section corrigée -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <!-- Badge de statut -->
+            <div class="hero-badges">
+                <span class="badge">🚀 Disponible pour un stage</span>
+                <span class="badge">💻 Développeuse Fullstack</span>
+            </div>
+            
+            <!-- Titre principal -->
+            <h1 class="hero-title">
+                Chloé LARCHER
+            </h1>
+            
+            <!-- Sous-titre -->
+            <p class="hero-subtitle">
+                Étudiante en BUT2 Informatique<br>
+                Passionnée par le développement web et les nouvelles technologies
+            </p>
+            
+            <!-- Appels à action -->
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>🎯 Voir mes projets</span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>💌 Me contacter</span>
+                </a>
+                <a href="assets/docs/cv_chloe_larcher_hachez.pdf" class="btn btn-text" download>
+                    <span>📄 Télécharger mon CV</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Indicateur de scroll -->
+    <div class="hero-scroll">
+        <div class="scroll-indicator"></div>
+        <span>Scroll pour découvrir</span>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/pokemon.jpg" alt="Projet 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Jeu Pokemon TCG</h3>
+                        <p>Jeu de carte Pokemon</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">FXML</span>
+                        </div>
+                        <a href="project1.html" class="btn btn-outline">Voir le projet</a>
+                    </div>
+                </article>
+
+                <!-- Projet 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/vm.jpg" alt="Projet 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Machines Virtuelles et Serveurs</h3>
+                        <p>Création de machines virtuelles pour une cimmunication par mail</p>
+                        <div class="project-tags">
+                            <span class="tag">VirtualBox</span>
+                            <span class="tag">Linux Ubuntu</span>
+                        </div>
+                        <a href="project2.html" class="btn btn-outline">Voir le projet</a>
+                    </div>
+                </article>
+
+                <!-- Projet 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/democrat.png" alt="Projet 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Application web</h3>
+                        <p>Application web de vote</p>
+                        <div class="project-tags">
+                            <span class="tag">html/css</span>
+                            <span class="tag">Bulma</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                        <a href="project3.html" class="btn btn-outline">Voir le projet</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Me contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Discutons </h3>
+                    <p>Je suis toujours ouvert à de nouvelles opportunités et collaborations.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <span>chloe.larcherhachez@yahoo.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Téléphone:</strong>
+                            <span>+33 6 14 43 96 69</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Localisation:</strong>
+                            <span>Sète, France</span>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Votre nom" required
+                               minlength="2" maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+        <textarea name="message" placeholder="Votre message" rows="5" required
+                  minlength="10" maxlength="2000"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <span class="btn-text">Envoyer le message</span>
+                        <span class="btn-loader" style="display: none;">⏳ Envoi en cours...</span>
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="www.linkedin.com/in/chloe-larcher-hachez" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

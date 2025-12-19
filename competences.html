@@ -135,7 +135,45 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="100">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                        </svg>
+                        <div class="circular-text">100%</div>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
+
             </div>
 
             <!-- Compétence 2 : Optimiser -->
@@ -157,6 +195,43 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="100">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                        </svg>
+                        <div class="circular-text">100%</div>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -180,6 +255,43 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="100">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                        </svg>
+                        <div class="circular-text">100%</div>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -202,6 +314,44 @@
                             </div>
                         </div>
                     </div>
+
+                <div class="circular-progress" data-percent="100">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                        <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                    </svg>
+                    <div class="circular-text">100%</div>
+                </div>
+
+                <script>
+                    // Pour animer la barre
+                    function animateCircularProgress(element) {
+                        const percent = element.getAttribute('data-percent');
+                        const fill = element.querySelector('.circular-fill');
+                        const text = element.querySelector('.circular-text');
+
+                        // Calcul de l'animation
+                        const radius = 45;
+                        const circumference = 2 * Math.PI * radius;
+                        const offset = circumference - (percent / 100) * circumference;
+
+                        fill.style.strokeDasharray = circumference;
+                        fill.style.strokeDashoffset = circumference;
+
+                        setTimeout(() => {
+                            fill.style.strokeDashoffset = offset;
+                            text.textContent = percent + '%';
+                        }, 100);
+                    }
+
+                    // Animer toutes les barres au chargement
+                    document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                    // Pour changer la couleur
+                    function setProgressColor(element, color) {
+                        element.querySelector('.circular-fill').style.stroke = color;
+                    }
+                </script>
                 </div>
             </div>
 
@@ -224,6 +374,43 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="100">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                        </svg>
+                        <div class="circular-text">100%</div>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -247,6 +434,43 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="100">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                        </svg>
+                        <div class="circular-text">100%</div>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
         </section>
@@ -292,6 +516,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="60">
+                        <div class="circular-svg-container">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                            </svg>
+                            <div class="circular-text">60%</div>
+                        </div>
+                        <p class="circular-status">En cours d'acquisition</p>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -322,6 +586,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="60">
+                        <div class="circular-svg-container">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                            </svg>
+                            <div class="circular-text">60%</div>
+                        </div>
+                        <p class="circular-status">En cours d'acquisition</p>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -351,6 +655,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="60">
+                        <div class="circular-svg-container">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                            </svg>
+                            <div class="circular-text">60%</div>
+                        </div>
+                        <p class="circular-status">En cours d'acquisition</p>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -381,6 +725,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="60">
+                        <div class="circular-svg-container">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                            </svg>
+                            <div class="circular-text">60%</div>
+                        </div>
+                        <p class="circular-status">En cours d'acquisition</p>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -411,6 +795,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="60">
+                        <div class="circular-svg-container">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                            </svg>
+                            <div class="circular-text">60%</div>
+                        </div>
+                        <p class="circular-status">En cours d'acquisition</p>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -441,6 +865,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress" data-percent="60">
+                        <div class="circular-svg-container">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circular-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="circular-fill"></circle>
+                            </svg>
+                            <div class="circular-text">60%</div>
+                        </div>
+                        <p class="circular-status">En cours d'acquisition</p>
+                    </div>
+
+                    <script>
+                        // Pour animer la barre
+                        function animateCircularProgress(element) {
+                            const percent = element.getAttribute('data-percent');
+                            const fill = element.querySelector('.circular-fill');
+                            const text = element.querySelector('.circular-text');
+
+                            // Calcul de l'animation
+                            const radius = 45;
+                            const circumference = 2 * Math.PI * radius;
+                            const offset = circumference - (percent / 100) * circumference;
+
+                            fill.style.strokeDasharray = circumference;
+                            fill.style.strokeDashoffset = circumference;
+
+                            setTimeout(() => {
+                                fill.style.strokeDashoffset = offset;
+                                text.textContent = percent + '%';
+                            }, 100);
+                        }
+
+                        // Animer toutes les barres au chargement
+                        document.querySelectorAll('.circular-progress').forEach(animateCircularProgress);
+
+                        // Pour changer la couleur
+                        function setProgressColor(element, color) {
+                            element.querySelector('.circular-fill').style.stroke = color;
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -473,6 +937,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -516,6 +981,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress future" data-percent="0">
+                        <div class="circular-container">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circular-bg future-bg"></circle>
+                                <!-- Pas de .circular-fill car progression à 0% -->
+                            </svg>
+                            <div class="circular-text future-text">?</div>
+                        </div>
+                        <p class="circular-status future-status">
+                            <span class="status-icon">🔮</span> En cours d'acquisition
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -546,6 +1023,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="circular-progress future" data-percent="0">
+                        <div class="circular-container">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circular-bg future-bg"></circle>
+                                <!-- Pas de .circular-fill car progression à 0% -->
+                            </svg>
+                            <div class="circular-text future-text">?</div>
+                        </div>
+                        <p class="circular-status future-status">
+                            <span class="status-icon">🔮</span> En cours d'acquisition
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -575,6 +1064,18 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="circular-progress future" data-percent="0">
+                        <div class="circular-container">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circular-bg future-bg"></circle>
+                                <!-- Pas de .circular-fill car progression à 0% -->
+                            </svg>
+                            <div class="circular-text future-text">?</div>
+                        </div>
+                        <p class="circular-status future-status">
+                            <span class="status-icon">🔮</span> En cours d'acquisition
+                        </p>
                     </div>
                 </div>
             </div>
@@ -607,6 +1108,7 @@
                         <h4>Maintenance applicative et évolution d'applications</h4>
                         <p>Refactoring, legacy code et modernisation</p>
                     </div>
+
                 </div>
             </div>
 

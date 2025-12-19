@@ -1083,29 +1083,51 @@ section {
     padding-left: 80px;
 }
 
+/* Timeline minimaliste avec écart */
+.timeline-compact {
+    position: relative;
+    padding-left: 120px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
 .timeline-date {
     position: absolute;
-    left: 0;
+    left: -120px;
     top: 0;
-    background: var(--blue-medium);
-    color: var(--white);
-    padding: 8px 16px;
-    border-radius: var(--border-radius);
+    width: 100px;
+    text-align: right;
     font-weight: 600;
-    width: 120px;
-    text-align: center;
+    color: #2c3e50;
+    padding-right: 20px;
 }
 
 .timeline-content {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    flex: 1;
+    padding-left: 20px;
+    border-left: 2px solid #3498db;
+    padding-bottom: 20px;
 }
 
-.timeline-content h3 {
-    color: var(--blue-dark);
-    margin-bottom: 0.5rem;
+/* Pour aligner verticalement avec la date */
+.timeline-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    border-left: 3px solid #3498db;
+}
+.timeline-compact::before {
+    content: '';
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e0e0e0;
 }
 
 /* Section Objectifs Professionnels */

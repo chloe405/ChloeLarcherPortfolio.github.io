@@ -3,31 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Chloé Larcher — Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation améliorée -->
-<nav class="navbar">
-    <div class="nav-container">
-        <!-- Logo -->
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container container">
         <div class="nav-logo">
             <a href="index.html">C.LARCHER</a>
         </div>
-        <img
-                src="assets/img/cadeau"
-                alt="Cadeau de Noël"
-                id="gift"
-                style="width:150px; cursor:pointer;"
-        >
 
-        <div id="easter-egg" class="hidden">
-            🎄 Joyeuses fêtes ! 🎄
-        </div>
-
-        <!-- Menu principal -->
         <nav class="nav-menu" id="navMenu">
             <a href="index.html" class="nav-link active">
                 <i class="fas fa-home"></i>
@@ -37,7 +27,7 @@
                 <i class="fas fa-user"></i>
                 <span>À propos</span>
             </a>
-            <a href="index.html#projects" class="nav-link">
+            <a href="#projects" class="nav-link">
                 <i class="fas fa-briefcase"></i>
                 <span>Projets</span>
             </a>
@@ -45,204 +35,253 @@
                 <i class="fas fa-graduation-cap"></i>
                 <span>Compétences BUT</span>
             </a>
-            <a href="index.html#contact" class="nav-link">
+            <a href="#contact" class="nav-link">
                 <i class="fas fa-envelope"></i>
                 <span>Contact</span>
             </a>
         </nav>
 
-        <!-- Menu hamburger -->
         <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
         </button>
     </div>
-
-    <!-- Overlay pour mobile -->
     <div class="mobile-overlay" id="mobileOverlay"></div>
 </nav>
 
-<!-- Hero Section corrigée -->
+<!-- Hero -->
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <!-- Badge de statut -->
             <div class="hero-badges">
-                <span class="badge">🚀 Disponible pour un stage</span>
-                <span class="badge">💻 Développeuse Fullstack</span>
+                <span class="badge">🌸 Disponible pour un stage</span>
+                <span class="badge">💻 Développeuse Full-Stack</span>
             </div>
-            
-            <!-- Titre principal -->
-            <h1 class="hero-title">
-                Chloé LARCHER
-            </h1>
-            
-            <!-- Sous-titre -->
+            <h1 class="hero-title">Chloé<br>Larcher</h1>
             <p class="hero-subtitle">
-                Étudiante en BUT2 Informatique<br>
-                Passionnée par le développement web et les nouvelles technologies
+                Étudiante en BUT Informatique · IUT Montpellier-Sète<br>
+                Passionnée par le développement web &amp; les nouvelles technologies
             </p>
-            
-            <!-- Appels à action -->
             <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">
-                    <span>🎯 Voir mes projets</span>
-                </a>
-                <a href="#contact" class="btn btn-outline">
-                    <span>💌 Me contacter</span>
-                </a>
-                <a href="assets/docs/cv_chloe_larcher_hachez.pdf" class="btn btn-text" download>
-                    <span>📄 Télécharger mon CV</span>
-                </a>
+                <a href="#projects" class="btn btn-primary">🎯 Voir mes projets</a>
+                <a href="#contact" class="btn btn-outline">💌 Me contacter</a>
+                <a href="assets/docs/cv_chloe_larcher_hachez.pdf" class="btn btn-text" download>📄 Mon CV</a>
             </div>
         </div>
-        
+
         <div class="hero-visual">
             <div class="floating-shapes">
                 <div class="shape shape-1"></div>
                 <div class="shape shape-2"></div>
                 <div class="shape shape-3"></div>
                 <div class="shape shape-4"></div>
+                <!-- Petites fleurs SVG -->
+                <svg style="position:absolute;top:30%;left:40%;width:120px;opacity:0.5;animation:floatShape 7s ease-in-out infinite" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="30" r="12" fill="#f4a7b9"/>
+                    <circle cx="70" cy="50" r="12" fill="#f4a7b9"/>
+                    <circle cx="50" cy="70" r="12" fill="#f4a7b9"/>
+                    <circle cx="30" cy="50" r="12" fill="#f4a7b9"/>
+                    <circle cx="50" cy="50" r="10" fill="#fde8ef"/>
+                </svg>
             </div>
         </div>
     </div>
-    
-    <!-- Indicateur de scroll -->
+
     <div class="hero-scroll">
         <div class="scroll-indicator"></div>
-        <span>Scroll pour découvrir</span>
+        <span>Découvrir</span>
     </div>
 </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Mes Projets</h2>
-            <div class="projects-grid">
-                <!-- Projet 1 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/pokemon.jpg" alt="Projet 1">
-                    </div>
-                    <div class="project-content">
-                        <h3>Jeu Pokemon TCG</h3>
-                        <p>Jeu de carte Pokemon</p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">FXML</span>
-                        </div>
-                        <a href="project1.html" class="btn btn-outline">Voir le projet</a>
-                    </div>
-                </article>
+<!-- Projects -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="projects-grid">
 
-                <!-- Projet 2 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/vm.jpg" alt="Projet 2">
+            <article class="project-card animate-on-scroll">
+                <div class="project-image">
+                    <img src="assets/images/pokemon.jpg" alt="Jeu Pokemon TCG">
+                </div>
+                <div class="project-content">
+                    <h3>Jeu Pokémon TCG</h3>
+                    <p>Jeu de cartes Pokémon en Java avec interface graphique FXML</p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">FXML</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Machines Virtuelles et Serveurs</h3>
-                        <p>Création de machines virtuelles pour une cimmunication par mail</p>
-                        <div class="project-tags">
-                            <span class="tag">VirtualBox</span>
-                            <span class="tag">Linux Ubuntu</span>
-                        </div>
-                        <a href="project2.html" class="btn btn-outline">Voir le projet</a>
-                    </div>
-                </article>
+                    <a href="project1.html" class="btn btn-outline">Voir le projet</a>
+                </div>
+            </article>
 
-                <!-- Projet 3 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/democrat.png" alt="Projet 3">
+            <article class="project-card animate-on-scroll">
+                <div class="project-image">
+                    <img src="assets/images/vm.jpg" alt="Machines Virtuelles">
+                </div>
+                <div class="project-content">
+                    <h3>Machines Virtuelles &amp; Serveurs</h3>
+                    <p>Création de VMs pour une communication par mail sous Linux</p>
+                    <div class="project-tags">
+                        <span class="tag">VirtualBox</span>
+                        <span class="tag">Linux Ubuntu</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Application web</h3>
-                        <p>Application web de vote</p>
-                        <div class="project-tags">
-                            <span class="tag">html/css</span>
-                            <span class="tag">Bulma</span>
-                            <span class="tag">SQL</span>
-                        </div>
-                        <a href="project3.html" class="btn btn-outline">Voir le projet</a>
-                    </div>
-                </article>
+                    <a href="project2.html" class="btn btn-outline">Voir le projet</a>
+                </div>
+            </article>
 
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/BDD.png" alt="Projet 3">
+            <article class="project-card animate-on-scroll">
+                <div class="project-image">
+                    <img src="assets/images/democrat.png" alt="Application de vote">
+                </div>
+                <div class="project-content">
+                    <h3>Application Web de Vote</h3>
+                    <p>Plateforme de vote démocratique avec base de données SQL</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Bulma</span>
+                        <span class="tag">SQL</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Base de Données SQL</h3>
-                        <p>Gestion de cinémas</p>
-                        <div class="project-tags">
-                            <span class="tag">SQL</span>
-                            <span class="tag">Looping</span>
-                        </div>
-                        <a href="project4.html" class="btn btn-outline">Voir le projet</a>
+                    <a href="project3.html" class="btn btn-outline">Voir le projet</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+                <div class="project-image">
+                    <img src="assets/images/BDD.png" alt="Base de Données SQL">
+                </div>
+                <div class="project-content">
+                    <h3>Base de Données SQL</h3>
+                    <p>Modélisation et gestion d'un réseau de cinémas</p>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Looping</span>
                     </div>
-                </article>
-            </div>
+                    <a href="project4.html" class="btn btn-outline">Voir le projet</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+                <div class="project-image">
+                    <img src="assets/images/nuitInfo2025.png" alt="Nuit de l'info 2025">
+                </div>
+                <div class="project-content">
+                    <h3>Nuit de l'info 2025</h3>
+                    <p>Le Village Numérique Résistant :Comment les établissements scolaires peuvent tenir tête aux Big Tech ?</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">React</span>
+                        <span class="tag">CSS</span>
+
+                    </div>
+                    <a href="projet5.html" class="btn btn-outline">Voir le projet</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+                <div class="project-image">
+                    <img src="assets/images/noodle1.png" alt="Nuit de l'info 2025">
+                </div>
+                <div class="project-content">
+                    <h3>Noodle</h3>
+                    <p>Créations de sondages intéractifs</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">MySQL</span>
+
+
+                    </div>
+                    <a href="project6.html" class="btn btn-outline">Voir le projet</a>
+                </div>
+            </article>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Me contacter</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Discutons </h3>
-                    <p>Je suis toujours ouvert à de nouvelles opportunités et collaborations.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <strong>Email:</strong>
-                            <span>chloe.larcherhachez@yahoo.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Téléphone:</strong>
-                            <span>+33 6 14 43 96 69</span>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Localisation:</strong>
-                            <span>Narbonne, France</span>
-                        </div>
+<!-- Contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Me contacter</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Parlons de vos projets 🌱</h3>
+                <p>Toujours ouverte à de nouvelles opportunités et collaborations — n'hésitez pas à me écrire !</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Email</strong>
+                        <span>chloe.larcherhachez@yahoo.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Téléphone</strong>
+                        <span>+33 6 14 43 96 69</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Localisation</strong>
+                        <span>Narbonne, France</span>
                     </div>
                 </div>
-<!--                <form id="contactForm" class="contact-form" method="POST">-->
-<!--                    <div class="form-group">-->
-<!--                        <input type="text" name="name" placeholder="Votre nom" required-->
-<!--                               minlength="2" maxlength="100">-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <input type="email" name="email" placeholder="Votre email" required>-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--        <textarea name="message" placeholder="Votre message" rows="5" required-->
-<!--                  minlength="10" maxlength="2000"></textarea>-->
-<!--                    </div>-->
-<!--                    <button type="submit" class="btn btn-primary" id="submitBtn">-->
-<!--                        <span class="btn-text">Envoyer le message</span>-->
-<!--                        <span class="btn-loader" style="display: none;">⏳ Envoi en cours...</span>-->
-<!--                    </button>-->
-<!--                    <div id="formMessage" class="form-message"></div>-->
-<!--                </form>-->
+                <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+                    <a href="https://linkedin.com/in/chloe-larcher-hachez" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/chloe405" class="btn btn-outline" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg" style="opacity:0.6">
+                    <!-- Grande fleur décorative -->
+                    <g transform="translate(150,150)">
+                        <ellipse cx="0" cy="-60" rx="20" ry="45" fill="#f4a7b9" opacity="0.8"/>
+                        <ellipse cx="0" cy="-60" rx="20" ry="45" fill="#f4a7b9" opacity="0.8" transform="rotate(60)"/>
+                        <ellipse cx="0" cy="-60" rx="20" ry="45" fill="#f4a7b9" opacity="0.8" transform="rotate(120)"/>
+                        <ellipse cx="0" cy="-60" rx="20" ry="45" fill="#fde8ef" opacity="0.8" transform="rotate(180)"/>
+                        <ellipse cx="0" cy="-60" rx="20" ry="45" fill="#fde8ef" opacity="0.8" transform="rotate(240)"/>
+                        <ellipse cx="0" cy="-60" rx="20" ry="45" fill="#fde8ef" opacity="0.8" transform="rotate(300)"/>
+                        <circle cx="0" cy="0" r="28" fill="#peche" />
+                        <circle cx="0" cy="0" r="28" fill="#f9c784"/>
+                    </g>
+                    <!-- Petites fleurs -->
+                    <g transform="translate(60,80)">
+                        <circle cx="0" cy="-15" r="7" fill="#b8a9d9" opacity="0.7"/>
+                        <circle cx="0" cy="-15" r="7" fill="#b8a9d9" opacity="0.7" transform="rotate(72,0,0)"/>
+                        <circle cx="0" cy="-15" r="7" fill="#b8a9d9" opacity="0.7" transform="rotate(144,0,0)"/>
+                        <circle cx="0" cy="-15" r="7" fill="#b8a9d9" opacity="0.7" transform="rotate(216,0,0)"/>
+                        <circle cx="0" cy="-15" r="7" fill="#b8a9d9" opacity="0.7" transform="rotate(288,0,0)"/>
+                        <circle cx="0" cy="0" r="8" fill="#ede8f7"/>
+                    </g>
+                    <g transform="translate(230,200)">
+                        <circle cx="0" cy="-12" r="6" fill="#7bbf8e" opacity="0.7"/>
+                        <circle cx="0" cy="-12" r="6" fill="#7bbf8e" opacity="0.7" transform="rotate(72,0,0)"/>
+                        <circle cx="0" cy="-12" r="6" fill="#7bbf8e" opacity="0.7" transform="rotate(144,0,0)"/>
+                        <circle cx="0" cy="-12" r="6" fill="#7bbf8e" opacity="0.7" transform="rotate(216,0,0)"/>
+                        <circle cx="0" cy="-12" r="6" fill="#7bbf8e" opacity="0.7" transform="rotate(288,0,0)"/>
+                        <circle cx="0" cy="0" r="7" fill="#e8f7ed"/>
+                    </g>
+                    <!-- Feuilles -->
+                    <ellipse cx="80" cy="220" rx="25" ry="12" fill="#7bbf8e" opacity="0.4" transform="rotate(-30,80,220)"/>
+                    <ellipse cx="200" cy="70" rx="20" ry="10" fill="#7bbf8e" opacity="0.3" transform="rotate(20,200,70)"/>
+                </svg>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/chloe-larcher-hachez" aria-label="LinkedIn">LinkedIn</a>
-                <a href="https://github.com/chloe405" aria-label="GitHub">GitHub</a>
-            </div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>🌸 &copy; 2025 Chloé Larcher-Hachez — Portfolio</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/chloe-larcher-hachez" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://github.com/chloe405" aria-label="GitHub">GitHub</a>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
